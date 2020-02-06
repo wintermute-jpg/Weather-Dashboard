@@ -19,8 +19,10 @@ header{
     height: 800px;
     width: 20%;
     float: left;
+    padding:5px;
+    text-align: center;
 }
-
+ 
 #display{
     border: 2px solid blue;
     width: 75%;
@@ -37,4 +39,8 @@ header{
 #forecast{
     border: 2px solid black;
     height: 25%;
+}
+
+#searchBtn{
+    background-color: dodgerblue;
 }
