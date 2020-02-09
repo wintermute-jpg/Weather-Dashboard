@@ -44,3 +44,56 @@ header{
 #searchBtn{
     background-color: dodgerblue;
 }
+
+#day0{
+    width: 15%;
+    background-color: dodgerblue;
+    color: black;
+    font-size: smaller;
+    height:162px;
+    
+    float:left;
+    border: 2px solid red;
+    margin-right: 20px;
+}
+
+#day1{
+    width:  15%;
+    background-color: dodgerblue;
+    color: black;
+    font-size: smaller;
+    height: 162px;
+    float: left;
+    border: 2px solid orange;
+    margin-right: 20px;
+}
+
+#day2{
+    width: 15%;
+    background-color: dodgerblue;
+    color: black;
+    font-size: smaller;
+    height: 162px;
+    border: 2px yellow solid;
+    float:left;
+    margin-right: 20px;
+}
+
+#day3{
+    width: 15%;
+    background-color: dodgerblue;
+    color: black;
+    font-size: smaller;
+    height: 162px;
+    float:left;
+    margin-right: 20px;
+}
+
+#day4{
+    width: 15%;
+    background-color: dodgerblue;
+    color: black;
+    font-size: smaller;
+    height: 162px;
+    float: left;
+}

@@ -4,7 +4,14 @@
         <link href="style.css" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Weather Machine</title>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> 
+
+        <title>Weather Machine</title> 
+
     </head>
     <body> 
         <header>Weather Dashboard</header>
@@ -13,8 +20,10 @@
             <div id="search">
                 <h1>Search Function</h1>
                 <input type=text placeholder="Search A City" id="field">
-                <button id="searchBtn" onclick="search()"><i class="fa fa-search"></i>Search</button>
-                <div id="history"></div>
+                <button id="searchBtn"><i class="fa fa-search"></i>Search</button>
+                <div >
+                    <ol id="history"></ol>
+                </div>
             </div>
 
             <div id="display">
@@ -29,6 +38,11 @@
 
                 <div id="forecast">
                     <h1>5 Day Forecast</h1>
+                    <div id="day0"></div>
+                    <div id="day1"></div>
+                    <div  id="day2"></div>
+                    <div  id="day3"></div>
+                    <div id="day4"></div>
                 </div>
             </div> 
         </div>
@@ -37,5 +51,7 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+ 
     </body>
 </html>
