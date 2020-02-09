@@ -1,5 +1,5 @@
 header{
-    background-color: azure;
+    background-color:lavenderblush;
     color: black;
     text-align: center;
     font-size: larger;
@@ -7,15 +7,21 @@ header{
     margin-bottom: 20px;
 } 
 
+body{
+    background-color: lavenderblush;
+}
 #container{
     width: 100%;
     height: 100%; 
-    border: 2px solid green;
+    
     box-sizing: initial;
 }
-
+#histBox{
+    background-color: rgb(68, 81, 148);
+    color:white;
+}
 #search{
-    border: 2px solid red;
+    background-color: lightsteelblue;
     height: 800px;
     width: 20%;
     float: left;
@@ -24,7 +30,6 @@ header{
 }
  
 #display{
-    border: 2px solid blue;
     width: 75%;
     height: 800px;
     margin-left: 21%;
@@ -32,13 +37,20 @@ header{
 
 #weather{
     height: 70%;
-    border: 2px solid pink;
+    
     margin-bottom: 20px;
 }
 
 #forecast{
-    border: 2px solid black;
-    height: 25%;
+    border: 5px solid black;
+    height: 30%;
+    padding-left: 10%;
+    background-color: gray;
+    color: white;
+}
+
+#display{
+    background-color: lightskyblue;
 }
 
 #searchBtn{
@@ -48,43 +60,48 @@ header{
 #day0{
     width: 15%;
     background-color: dodgerblue;
-    color: black;
+    color: white;
     font-size: smaller;
-    height:162px;
-    
+    height: 162px;
+    border-radius: 30px;
+    text-align: center;
     float:left;
-    border: 2px solid red;
     margin-right: 20px;
 }
 
 #day1{
-    width:  15%;
+    width: 15%;
     background-color: dodgerblue;
-    color: black;
+    color: white;
     font-size: smaller;
     height: 162px;
-    float: left;
-    border: 2px solid orange;
+    border-radius: 30px;
+    text-align: center;
+    float:left;
     margin-right: 20px;
 }
 
 #day2{
     width: 15%;
     background-color: dodgerblue;
-    color: black;
+    color: white;
     font-size: smaller;
     height: 162px;
-    border: 2px yellow solid;
+    border-radius: 30px;
+    text-align: center;
     float:left;
     margin-right: 20px;
+
 }
 
 #day3{
     width: 15%;
     background-color: dodgerblue;
-    color: black;
+    color: white;
     font-size: smaller;
     height: 162px;
+    border-radius: 30px;
+    text-align: center;
     float:left;
     margin-right: 20px;
 }
@@ -92,8 +109,11 @@ header{
 #day4{
     width: 15%;
     background-color: dodgerblue;
-    color: black;
+    color: white;
     font-size: smaller;
     height: 162px;
-    float: left;
+    border-radius: 30px;
+    text-align: center;
+    float:left;
+    margin-right: 20px;
 }

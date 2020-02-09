@@ -9,15 +9,14 @@ window.onload = function(){
     //console.log(weatherURL);
     var searchQuery = $("#field").val();
     $("#history").append("<li>"+ searchQuery+ "</li>");
-       
     $.ajax({
-        url: weatherURL + searchQuery + ",us&mode"+"&appid=" + APIkey,
+        url: weatherURL + searchQuery + ",us&mode&appid=" + APIkey,
         method: "GET",
         dataType:"jsonp",
     }).then(function(response){
         console.log(response);
         var temp= (response.main.temp - 273.15)*1.80 + 32;
-        var tempF = temp.toFixed(2);
+        var tempF = temp.toFixed(0);
         var icon = response.weather[0].icon ;
         $("#city").html("<h2>" + response.name + "(" + date + ")"+ "<img src='http://openweathermap.org/img/wn/"+icon+"@2x.png'"+"<h2>");
        console.log(icon);
@@ -41,9 +40,9 @@ window.onload = function(){
             //var date = find.dt_txt;
           //  console.log(date);
             console.log(foreIcon);
-            var forTemp = ((find.main.temp - 273.15)*1.80 +32).toFixed(2);
+            var forTemp = ((find.main.temp - 273.15)*1.80 +32).toFixed(0);
             //console.log(forTemp);
-            $("#day"+ i).html("<p>"+ foreDate + "<p>"+"<img src='http://openweathermap.org/img/wn/"+foreIcon+"@2x.png' style='width:50px;height:50px;'>"+ "<p>" + "Tempurature F" +forTemp + "<p>"+"<p>" +"Humidity: " + find.main.humidity + "<p>");
+            $("#day"+ i).html("<p>"+ foreDate + "<p>"+"<img src='http://openweathermap.org/img/wn/"+foreIcon+"@2x.png' style='width:50px;height:50px;'>"+ "<p>" + "Tempurature F: " +forTemp + "<p>"+"<p>" +"Humidity: " + find.main.humidity + "<p>");
             n ++;
             n ++;
             n ++;
@@ -70,26 +69,6 @@ window.onload = function(){
     }
 )
 }
-
-
-    //history function 
-//store user input in local storage
-// on page load, fill in the history bar with stored data
-//function store(item_id){
-    //get field input and set as var
-    //console.log(input);
-    //post it to local storage
-   // localStorage.setItem("search", JSON.stringify(searchQuery));
-    //console.log(localStorage);   
-//}
-
-//create forecast function
-//basically the same as search function 
-//AJAX call with specified syntax to provide forecast data
-//Slot the data into divs inside forecast
-//include date, temp and humidity
-
-//impliment icons for each kind of weather event
 
 
 
